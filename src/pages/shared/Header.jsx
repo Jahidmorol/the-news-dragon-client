@@ -6,8 +6,8 @@ import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
-    <Container>
-      <div className="text-center">
+    <Container className="my-4">
+      <div className="text-center mb-3">
         <img src={logo} alt="photo" />
         <p className="my-2 ">Journalism Without Fear or Favour</p>
         <h5>{moment().format("dddd, MMMM Do YYYY")}</h5>
@@ -24,7 +24,7 @@ const Header = () => {
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="mx-auto">
               <Nav.Link href="#features">Home</Nav.Link>
               <Nav.Link href="#pricing">About</Nav.Link>
               <Nav.Link href="#pricing">Career</Nav.Link>
